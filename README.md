@@ -68,5 +68,20 @@ ting-config-server 应用分组获取配置
 
 nocos config 默认通过bootstrap.properties 配置，nocos cofig 的获取地址
 
+项目属性的优先级：nacos > local(本地为 application.properties/yml)
+
+1、本地与 nacos 存在相同的属性，则会读取 nacos 的值
+
+2、nacos 中不存在的属性，则读取本地
+
+nocos 支持多属性文件的配置。
+
+
+
+
+
+
+
+	
 
 

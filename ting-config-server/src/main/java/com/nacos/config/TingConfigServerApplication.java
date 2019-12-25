@@ -9,9 +9,10 @@ public class TingConfigServerApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(TingConfigServerApplication.class, args);
-		String userName = applicationContext.getEnvironment().getProperty("project.name");
-        String userAge = applicationContext.getEnvironment().getProperty("project.org");
-        System.err.println("project.name: " +userName+"; project.org: "+userAge);
+		String name = applicationContext.getEnvironment().getProperty("project.name");
+        String org = applicationContext.getEnvironment().getProperty("project.org");
+        String item = applicationContext.getEnvironment().getProperty("project.item");
+        System.err.println("project.name: " + name + "; project.org: " + org + "; project.item: " + item);
 	}
 
 }
