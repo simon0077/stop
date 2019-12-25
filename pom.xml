@@ -16,6 +16,7 @@
 		<module>ting-provider-server</module>
 		<module>ting-consumer-server</module>
 		<module>ting-config-server</module>
+		<module>ting-sentinel-server</module>
 	</modules>
 	<properties>
 		<java.version>1.8</java.version>
